@@ -106,6 +106,10 @@ counttable_original<-read.delim("GSE81082_count_matrix_ENSIDs_symbols_nr.txt", h
 ```
 boxplot(log2((counttable)+1),las=3, col="red")
 ```
+<p align="center">
+  <img src="{{ page.root }}/fig/box_plot_orig.png" style="margin:10px;height:350px"/>
+  </p>
+
 
 #### What is a DESeq2 object?
 - The basic entity used by the DESeq2 package is and object class called DESeqDataSet.
@@ -157,10 +161,12 @@ vst.data <- assay(vst)
 
 #### Re-drawing the box plots 
 - We will now re-generate the box plots to see if the transformation has brought about any difference in distribution.
-```{r, fig.width=12}
+```{r}
 boxplot(vst.data,las=3, col="red")
 ```
-
+<p align="center">
+  <img src="{{ page.root }}/fig/box_plot_transformed.png" style="margin:10px;height:350px"/>
+  </p>
 
 Challenge
 DO you see difference in the two box plotS?
@@ -225,5 +231,5 @@ It is observed that in biological experiments multiple genes contribute to the t
 
 <p align="center">
   <img src="{{ page.root }}/fig/PCA1_gene_contributions.png" style="margin:10px;height:350px"/>
-  </p>
+ </p>
   
