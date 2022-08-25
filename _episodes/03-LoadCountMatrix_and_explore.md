@@ -33,7 +33,7 @@ keypoints:
 
 ### Open a R-markdown file 
   <p align="center">
-  <img src="{{ page.root }}/fig/open_Rmarkdown_file.png" style="margin:10px;height:350px"/>
+  <img src="{{ page.root }}/fig/Rmarkdown_open_file.png" style="margin:10px;height:350px"/>
   </p>
 
 - From here on we will be running individual chunks of code in the R-markdown document and follow
